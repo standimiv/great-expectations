@@ -1,4 +1,4 @@
-package expectations;
+package com.expectations;
 
 import lombok.Data;
 
