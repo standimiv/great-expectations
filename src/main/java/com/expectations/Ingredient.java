@@ -5,11 +5,11 @@ import lombok.Data;
 @Data
 public class Ingredient {
 	
-	private String id;
-	private String name;
-	private Type type;
+	private final String id;
+	private final String name;
+	private final Type type;
 	
 	public enum Type {
-		DOUGH, SAUCE, MEAT, VEGETABLES, CHEESE, SEASONING  
+		SIZE, DOUGH, MEAT, VEGETABLES, CHEESE, SAUCE, SEASONING  
 	}
 }
