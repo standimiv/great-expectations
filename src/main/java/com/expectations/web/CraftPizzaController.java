@@ -26,6 +26,7 @@ public class CraftPizzaController {
 	
 	@ModelAttribute
 	public void addIngredientsToModel (Model model) {
+		System.out.println("Hello addIngredients");
 		List<Ingredient> ingredients = Arrays.asList(
 			new Ingredient("SMAL", "Small", Type.SIZE),
 			new Ingredient("LARG", "Large", Type.SIZE),
@@ -59,11 +60,13 @@ public class CraftPizzaController {
 	
 	@ModelAttribute(name = "order")
 	public Order order() {
+		System.out.println("Hello order");
 		return new Order();
 	}
 	
-	@ModelAttribute(name = "pizza")
+	@ModelAttribute(name = "pizza")	
 	public Pizza pizza () {
+		System.out.println("Hello pizza");
 		return new Pizza();
 	}
 	
